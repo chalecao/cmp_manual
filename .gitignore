@@ -1,2 +1,2 @@
-*.md
-assets
+manual/*.md
+manual/assets
