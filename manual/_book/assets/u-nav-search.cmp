@@ -1,0 +1,204 @@
+[
+  {
+    "meta": {
+      "date": "2017-1-11",
+      "name": "u-search"
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 600
+    },
+    "elements": [
+      {
+        "eid": 578,
+        "type": "ELEMENT",
+        "properties": {
+          "id": "u-search-container",
+          "rid": "",
+          "width": 256,
+          "height": 30,
+          "left": 0,
+          "top": 0,
+          "zIndex": 0,
+          "boxColor": "#000000",
+          "border": true,
+          "borderColor": 5617961,
+          "background": true,
+          "backgroundColor": 5617705,
+          "backgroundAlpha": 1,
+          "backgroundImageType": "none",
+          "backgroundGradientStops": [
+            {
+              "percent": 0,
+              "color": "rgba(255, 255, 255, 1)"
+            },
+            {
+              "percent": 1,
+              "color": "rgba(0, 0, 0, 1)"
+            }
+          ],
+          "backgroundGradientAngle": 180,
+          "backgroundImageStr": "",
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderBottomLeftRadius": 0,
+          "marginTop": 0,
+          "marginRight": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "hasShadow": false,
+          "shadowOffsetX": 0,
+          "shadowOffsetY": 0,
+          "shadowBlur": 10,
+          "shadowColor": 0,
+          "shadowColorAlpha": 1,
+          "boxFontSize": 16,
+          "newBlank": false,
+          "targetUrl": "",
+          "boxClassStr": "cmp-element cmp-element j-search-box",
+          "overflowX": false,
+          "overflowY": false,
+          "hover": false,
+          "hoverComponent": "",
+          "hoverStr": "",
+          "color": "#ffffff",
+          "classStr": "cmp-element cmp-element j-search-box"
+        }
+      },
+      {
+        "eid": 579,
+        "type": "ELEMENT",
+        "properties": {
+          "id": "u-search-input",
+          "rid": "",
+          "width": 220,
+          "height": 30,
+          "left": 0,
+          "top": 0,
+          "zIndex": 1,
+          "boxColor": "#000000",
+          "border": false,
+          "borderColor": 5617961,
+          "background": true,
+          "backgroundColor": 16777215,
+          "backgroundAlpha": 1,
+          "backgroundImageType": "none",
+          "backgroundGradientStops": [
+            {
+              "percent": 0,
+              "color": "rgba(255, 255, 255, 1)"
+            },
+            {
+              "percent": 1,
+              "color": "rgba(0, 0, 0, 1)"
+            }
+          ],
+          "backgroundGradientAngle": 180,
+          "backgroundImageStr": "",
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderBottomLeftRadius": 0,
+          "marginTop": 0,
+          "marginRight": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "hasShadow": false,
+          "shadowOffsetX": 0,
+          "shadowOffsetY": 0,
+          "shadowBlur": 10,
+          "shadowColor": 0,
+          "shadowColorAlpha": 1,
+          "boxFontSize": 16,
+          "newBlank": false,
+          "targetUrl": "",
+          "boxClassStr": "cmp-element cmp-element j-input",
+          "overflowX": true,
+          "overflowY": true,
+          "hover": false,
+          "hoverComponent": "",
+          "hoverStr": "",
+          "color": "#ffffff",
+          "classStr": "cmp-element cmp-element j-input"
+        }
+      },
+      {
+        "eid": 580,
+        "type": "TEXT",
+        "properties": {
+          "id": "u-search-icon",
+          "rid": "",
+          "width": "36",
+          "height": "30",
+          "left": 220,
+          "top": 0,
+          "zIndex": 1,
+          "boxColor": "#000000",
+          "border": false,
+          "borderColor": 5617961,
+          "background": false,
+          "backgroundColor": 16777215,
+          "backgroundAlpha": 1,
+          "backgroundImageType": "none",
+          "backgroundGradientStops": [
+            {
+              "percent": 0,
+              "color": "rgba(255, 255, 255, 1)"
+            },
+            {
+              "percent": 1,
+              "color": "rgba(0, 0, 0, 1)"
+            }
+          ],
+          "backgroundGradientAngle": 180,
+          "backgroundImageStr": "",
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderBottomLeftRadius": 0,
+          "marginTop": 0,
+          "marginRight": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "hasShadow": false,
+          "shadowOffsetX": 0,
+          "shadowOffsetY": 0,
+          "shadowBlur": 10,
+          "shadowColor": 0,
+          "shadowColorAlpha": 1,
+          "boxFontSize": 16,
+          "newBlank": false,
+          "targetUrl": "",
+          "boxClassStr": "cmp-element cmp-text",
+          "overflowX": false,
+          "overflowY": false,
+          "hover": false,
+          "hoverComponent": "",
+          "hoverStr": "",
+          "text": "",
+          "fontFamily": "",
+          "fontSize": 20,
+          "color": "#ffffff",
+          "horzontalAlign": "center",
+          "verticleAlign": "middle",
+          "lineHeight": 30,
+          "classStr": "cmp-element cmp-text u-icon-search j-searchBtn"
+        }
+      }
+    ],
+    "assets": {}
+  }
+]
