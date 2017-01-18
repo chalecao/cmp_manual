@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>制作Cache驱动模块 · GitBook</title>
+        <title>组件池的使用 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="制作功能模块完整流程.html" />
     
-    
-    <link rel="prev" href="制作复杂nejregular模块.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -193,7 +191,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="制作cache驱动模块.html">
+        <li class="chapter " data-level="1.9" data-path="制作cache驱动模块.html">
             
                 <a href="制作cache驱动模块.html">
             
@@ -239,7 +237,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="组件池的使用.html">
+        <li class="chapter active" data-level="2.2" data-path="组件池的使用.html">
             
                 <a href="组件池的使用.html">
             
@@ -282,7 +280,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >制作Cache驱动模块</a>
+        <a href="." >组件池的使用</a>
     </h1>
 </div>
 
@@ -297,8 +295,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5236;&#x4F5C;cache&#x9A71;&#x52A8;&#x6A21;&#x5757;">&#x5236;&#x4F5C;Cache&#x9A71;&#x52A8;&#x6A21;&#x5757;</h1>
-<p>todo:</p>
+                                <h1 id="&#x7EC4;&#x4EF6;&#x6C60;&#x7684;&#x4F7F;&#x7528;">&#x7EC4;&#x4EF6;&#x6C60;&#x7684;&#x4F7F;&#x7528;</h1>
+<p>&#x7EC4;&#x4EF6;&#x6C60;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x52A0;&#x8F7D;&#x672C;&#x5730;&#x7EC4;&#x4EF6;&#x6C60;&#x548C;&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x7EC4;&#x4EF6;&#x6C60;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x3002;
+&#x7EC4;&#x4EF6;&#x6C60;&#x4E3B;&#x8981;&#x662F;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x540E;&#x7F00;&#x540D;&#x4E3A; .cmpp&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>//index.cmpp
+[
+  {
+    &quot;name&quot;: &quot;u-courseCardWithTime&quot;,
+    &quot;desc&quot;: &quot;&#x5E26;&#x6709;&#x65F6;&#x95F4;&#x7684;&#x8BFE;&#x7A0B;&#x5361;&#x7247;&quot;,
+    &quot;img&quot;:&quot;../example/courseCardWithTime/example.png&quot;,
+    &quot;url&quot;: &quot;../example/courseCardWithTime/u-courseCardWithTime.cmp&quot;,
+    &quot;postUrl&quot;: &quot;/api/u-courseCardWithTime&quot;
+  },
+  {
+    &quot;name&quot;: &quot;u-liveCard&quot;,
+    &quot;desc&quot;: &quot;&#x76F4;&#x64AD;&#x8BFE;&#x65F6;&#x5361;&#x7247;&quot;,
+    &quot;img&quot;:&quot;../example/liveCard/example.png&quot;,
+    &quot;url&quot;: &quot;../example/liveCard/u-liveCard.cmp&quot;
+  }
+]
+</code></pre><p>&#x5176;&#x4E2D; name &#x662F;&#x7EC4;&#x4EF6;&#x7684;&#x6807;&#x8BC6;&#xFF0C;desc&#x662F;&#x7EC4;&#x4EF6;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;img&#x662F;&#x7EC4;&#x4EF6;&#x7684;&#x7F29;&#x7565;&#x56FE;&#xFF0C;url&#x662F;&#x52A0;&#x8F7D;&#x8BE5;&#x7EC4;&#x4EF6;&#x6570;&#x636E;&#x7684;&#x8DEF;&#x5F84;, postUrl&#x662F;&#x4FDD;&#x5B58;&#x7EC4;&#x4EF6;&#x5230;&#x7EC4;&#x4EF6;&#x6C60;&#x65F6;&#x4F1A;&#x5411;&#x6539;&#x5730;&#x5740;&#x63D0;&#x4EA4;&#x7EC4;&#x4EF6;&#x6570;&#x636E;&#x3002;</p>
+<h3 id="cmps&#x670D;&#x52A1;">cmps&#x670D;&#x52A1;</h3>
+<pre><code>npm install cmps -g
+cmps ./ -p 8000
+</code></pre><p>cmps&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;&#x3002;cmps&#x4E0D;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;http&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x4E14;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x4E86;cmp APP&#x5E94;&#x7528;&#xFF0C;&#x9ED8;&#x8BA4;&#x76D1;&#x542C;&#x7EC4;&#x4EF6;&#x6C60;&#x4FDD;&#x5B58;&#x7EC4;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;&#x7EC4;&#x4EF6;&#x5230;&#x7EC4;&#x4EF6;&#x914D;&#x7F6E;&#x7684;url&#x8DEF;&#x5F84;&#x4E0A;&#x3002;</p>
 
                                 
                                 </section>
@@ -326,14 +346,10 @@
 
             
                 
-                <a href="制作复杂nejregular模块.html" class="navigation navigation-prev " aria-label="Previous page: 制作复杂NEJ+Regular模块">
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CMP制作动画">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="制作功能模块完整流程.html" class="navigation navigation-next " aria-label="Next page: 制作功能模块完整流程">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -342,7 +358,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"制作Cache驱动模块","level":"1.9","depth":1,"next":{"title":"制作功能模块完整流程","level":"1.10","depth":1,"path":"制作功能模块完整流程.md","ref":"制作功能模块完整流程.md","articles":[]},"previous":{"title":"制作复杂NEJ+Regular模块","level":"1.8","depth":1,"path":"制作复杂nejregular模块.md","ref":"制作复杂nejregular模块.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"制作cache驱动模块.md","mtime":"2017-01-11T02:16:00.018Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-18T02:02:08.656Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"组件池的使用","level":"2.2","depth":1,"previous":{"title":"CMP制作动画","level":"2.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"组件池的使用.md","mtime":"2017-01-16T02:06:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-18T02:02:08.656Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
